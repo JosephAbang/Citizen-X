@@ -20,7 +20,7 @@
         </nav>
     </header>
     <main>
-        <section class="slider">
+        <section class="slider" id="main-slider">
             <div class="slides">
                 <div class="slide">
                     <div class="overlay"></div>
@@ -71,8 +71,8 @@
                         <span>Jane Smith</span> in <span>Government Reforms</span> - May 18, 2024 - Member-only
                     </div>
                 </div>
-                <h3>The Role of Technology in Modern Governance</h3>
-                <p>Technology is reshaping how governments operate. Discuss the benefits and challenges of integrating technology into governance.</p>
+                <h3>The Role of Technology in Governance</h3>
+                <p>Technology has transformed the way governments operate. Let's explore how we can further integrate technology into governance.</p>
                 <div class="article-footer">
                     <span>Technology</span> - <span>7 min read</span> - <a href="discussions.html">Read more</a>
                 </div>
@@ -80,24 +80,33 @@
             <hr>
             <a href="discussions.html" class="see-more">See more</a>
         </section>        
-        <section class="projects">
+        <section class="ongoing-projects" id="project-slider">
             <h2>Ongoing Projects</h2>
-            <div class="project-gallery">
-                <div class="project-card">
-                    <img src="project-placeholder.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <a href="projects.html">Learn more</a>
+            <div class="project-slider">
+                <button class="prev">&#10094;</button>
+                <div class="project-slides">
+                    <div class="project">
+                        <img src="../images/railway.jpg" alt="Project 1">
+                        <h3>Lagos-Ibadan Railway</h3>
+                        <p>It is funded by a $1.3 billion loan from the Export-Import Bank of China and about $182 million from the Nigerian government.</p>
+                    </div>
+                    <div class="project">
+                        <img src="../images/Ikorodu-Road-1062x598.jpg" alt="Project 2">
+                        <h3>Ikorodu Road Potholes</h3>
+                        <p>Covering potholes aroud Ikorodu even during the raining season thereby reducing accidents.</p>
+                    </div>
+                    <div class="project">
+                        <img src="../images/PEWASH.jpg" alt="Project 3">
+                        <h3>Clean Water Initiative</h3>
+                        <p>Providing clean and safe drinking water to underserved communities.</p>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="project-placeholder.png" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <a href="projects.html">Learn more</a>
-                </div>
-                <div class="project-card">
-                    <img src="project-placeholder.png" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <a href="projects.html">Learn more</a>
-                </div>
+                <button class="next">&#10095;</button>
+            </div>
+            <div class="project-buttons">
+                <button class="cta-button">Find a Project</button>
+                <button class="cta-button">Propose a Project</button>
+                <button class="cta-button">Track a Project</button>
             </div>
         </section>
     </main>
