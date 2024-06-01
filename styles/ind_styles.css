@@ -10,7 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: rgba(0, 0, 0, 0.5); Semi-transparent background for better contrast */
     padding: 10px 20px;
     position: absolute;
     top: 0;
@@ -25,7 +24,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: rgb(4, 92, 4);
+    color: #008000; /* Nigerian green */
     text-decoration: none;
     font-size: 1.1em;
 }
@@ -105,6 +104,7 @@ main {
 .articles h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #008000; /* Nigerian green */
 }
 
 .article {
@@ -135,6 +135,7 @@ main {
 .article h3 {
     font-size: 1.5em;
     margin: 10px 0;
+    color: #333;
 }
 
 .article p {
@@ -148,7 +149,7 @@ main {
 }
 
 .article-footer a {
-    color: #007bff;
+    color: #008000; /* Nigerian green */
     text-decoration: none;
     font-weight: bold;
 }
@@ -166,7 +167,7 @@ hr {
 .see-more {
     display: block;
     text-align: center;
-    color: #007bff;
+    color: #008000; /* Nigerian green */
     text-decoration: none;
     font-weight: bold;
 }
@@ -175,18 +176,94 @@ hr {
     text-decoration: underline;
 }
 
-
-.project-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
+.ongoing-projects {
+    text-align: center;
+    margin: 40px 0;
 }
 
-.project-card img {
+.ongoing-projects h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #008000; /* Nigerian green */
+}
+
+.project-slider {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 2px solid #008000; /* Nigerian green */
+    background-color: white;
+    border-radius: 10px; /* Adding a bit of style */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding a bit of drama */
+}
+
+.project-slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.project {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.project img {
     width: 100%;
-    height: 150px;
-    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+}
+
+.project h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.project p {
+    color: #666;
+    font-size: 1em;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.project-buttons {
+    margin-top: 20px;
+}
+
+.cta-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #008000; /* Nigerian green */
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #006400; /* Darker green */
 }
 
 footer {
@@ -195,4 +272,5 @@ footer {
     background-color: #fff;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
     color: #333;
+    border-top: 2px solid #008000; /* Nigerian green */
 }
