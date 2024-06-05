@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Portfolio Project</title>
+    <link rel="stylesheet" href="../styles/dashboard_styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo">
+                </a>
+                <h2>Dashboard</h2>
+            </div>
+            <nav class="sidebar-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-poll"></i>
+                            <span>Polls</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-project-diagram"></i>
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fas fa-comments"></i>
+                            <span>Discussions</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="main-header">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search something here...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="user-info">
+                    <img src="../images/PSX_20221017_221501.jpg" alt="User Profile">
+                    <div class="user-details">
+                        <h3>Welcome, John Doe!</h3>
+                        <p>Empowering you to engage in governance</p>
+                    </div>
+                </div>
+            </header>
+            <section class="content">
+                <div class="overview">
+                    <div class="overview-item">
+                        <i class="fas fa-chart-line"></i>
+                        <h4>Project Monitoring</h4>
+                        <p>Track real-time progress of government projects.</p>
+                        <div class="dropdown">
+                            <label for="location">Track by Location:</label>
+                            <select id="location">
+                                <option value="lagos">Lagos</option>
+                                <option value="abuja">Abuja</option>
+                                <option value="kano">Kano</option>
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <label for="project-name">Track by Project Name:</label>
+                            <input type="text" id="project-name" placeholder="Enter project name">
+                        </div>
+                    </div>
+                    <div class="overview-item">
+                        <i class="fas fa-vote-yea"></i>
+                        <h4>Secure Voting</h4>
+                        <p>Participate in secure and transparent online voting.</p>
+                        <div class="countdown">
+                            <h4>Next Election Countdown:</h4>
+                            <div id="countdown-timer"></div>
+                        </div>
+                    </div>
+                    <div class="overview-item">
+                        <i class="fas fa-book-open"></i>
+                        <h4>Political Education</h4>
+                        <p>Learn about political processes and civic duties.</p>
+                        <button class="cta-button">Start Learning</button>
+                    </div>
+                </div>
+                <div class="main-section">
+                    <div class="interactive-map">
+                        <h3>Interactive Project Map</h3>
+                        <img src="../images/Map-of-Nigeria-showing-the-ecological-zones.png" alt="Interactive Map">
+                    </div>
+                </div>
+                <div class="additional-section">
+                    <div class="polls-section">
+                        <h3>Active Polls</h3>
+                        <div class="poll-card">
+                            <h4>Which candidate do you support?</h4>
+                            <p>Participants: 1234</p>
+                            <div class="poll-options">
+                                <label>
+                                    <input type="radio" name="poll" value="candidateA"> LP
+                                </label>
+                                <label>
+                                    <input type="radio" name="poll" value="candidateB"> PDP
+                                </label>
+                                <label>
+                                    <input type="radio" name="poll" value="candidateC"> APC
+                                </label>
+                                <button>Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="education-section">
+                        <h3>Educational Resources</h3>
+                        <div class="resource-card">
+                            <h4>The Importance of Voting</h4>
+                            <p>Learn why your vote matters and how to participate effectively.</p>
+                        </div>
+                        <div class="resource-card">
+                            <h4>Understanding Political Parties</h4>
+                            <p>Get to know the different political parties and their platforms.</p>
+                        </div>
+                        <div class="resource-card">
+                            <h4>How to Run for Office</h4>
+                            <p>Steps and requirements for running for a political office.</p>
+                        </div>
+                        <!-- Add more educational resources as needed -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../appjs/dashboard.js"></script>
+</body>
+</html>
