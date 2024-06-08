@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls - Portfolio Project</title>
+    <link rel="stylesheet" href="../styles/polls.css">
+</head>
+<body>
+    <div class="polls-container">
+        <header class="main-header">
+            <div class="search-bar">
+                <input type="text" placeholder="Search polling unit...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="user-info">
+                <img src="user-profile.jpg" alt="User Profile">
+                <div class="user-details">
+                    <h3>Welcome, John Doe!</h3>
+                    <p>Track and participate in elections</p>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="election-stats">
+                <h2>Current Election Statistics</h2>
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4>Total Votes</h4>
+                        <p id="total-votes">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Registered Voters</h4>
+                        <p id="registered-voters">0</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Polling Units</h4>
+                        <p id="polling-units">0</p>
+                    </div>
+                </div>
+            </section>
+            <section class="polling-units">
+                <h2>Find Your Polling Unit</h2>
+                <div class="polling-unit-search">
+                    <input type="text" id="polling-unit-search" placeholder="Enter location">
+                    <button id="search-button">Search</button>
+                </div>
+                <div id="polling-units-list">
+                    <!-- List of polling units will be populated here -->
+                </div>
+            </section>
+            <section class="secure-voting">
+                <h2>Vote Now</h2>
+                <form id="vote-form">
+                    <div class="form-group">
+                        <label for="voter-id">Voter ID:</label>
+                        <input type="text" id="voter-id" placeholder="Enter your voter ID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="candidate">Choose Candidate:</label>
+                        <select id="candidate" required>
+                            <option value="candidateA">LP</option>
+                            <option value="candidateB">PDP</option>
+                            <option value="candidateC">APC</option>
+                        </select>
+                    </div>
+                    <button type="submit">Submit Vote</button>
+                </form>
+                <div id="vote-message"></div>
+            </section>
+        </main>
+    </div>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="../appjs/polls.js"></script>
+</body>
+</html>
